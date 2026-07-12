@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+ 
+\documentclass{resume} % Use the custom resume.cls style 
+\usepackage[dvipsnames]{xcolor}
+\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Zixu Wang} % Your name 
+\address{Tsinghua University, Beijing, China} % Your address 
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional) 
+\address{+86 15689753696 \\ wangzixu25@mails.tsinghua.edu.cn \\ veranda.github.io} % Your phone number and email
+
+\definecolor{TsinghuaPurple}{cmyk}{0.58,0.90,0,0}
+\renewenvironment{rSection}[1]{
+\sectionskip
+\textcolor{TsinghuaPurple}{\MakeUppercase{#1}}
+\sectionlineskip
+\hrule
+\begin{list}{}{
+%\setlength{\leftmargin}{1.5em}
+\setlength{\leftmargin}{0em}
+}
+\item[]
+}{
+\end{list}
+}
+
+
+\begin{document}  
+
+
+
+%----------------------------------------------------------------------------------------
+%	SELF-INTRODUCTION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Self-Introduction}
+
+Hi! I'm a highly motivated undergraduate student in the Department of Automation at Tsinghua University,
+with a strong passion for Embodied Intelligence, Physical AI and Multimodal Large Language Model.
+I'm eager to explore interdisciplinary research at the intersection of automation, computer science, and
+artificial intelligence, and to apply theoretical knowledge to real-world engineering challenges.
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Undergraduate in Department of Automation} \hfill {August 2025 - Present}
+\\ 
+School of Information Science and Technology
+\\
+Tsinghua University
+
+
+
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Personal Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Embodied Intelligence & Algorithm Design (Reinforcement Learning, Imitation Learning, Motion Planning), \\& Robot Simulation (Isaac Sim, Gazebo), \\& ROS2, Sensor Fusion, Kinematics \& Dynamics Modeling\\
+Computer Vision & 3D Vision (Point Cloud Processing, SLAM), \\& 2D Vision (Object Detection, Segmentation, Tracking, Pose Estimation), \\& Camera Calibration, Multi-View Geometry\\
+Programming \& Tools & Python, C/C++, Multisim, PyTorch \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTEREST SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Interest}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Embodied AI & Robot Learning (Reinforcement Learning, Imitation Learning, Sim-to-Real Transfer), \\& Manipulation \& Locomotion, Human-Robot Interaction, \\& Physics Simulation \& Digital Twins\\
+Computer Vision & 3D Scene Understanding, Neural Rendering (NeRF, 3D Gaussian Splatting), \\& Visual SLAM \& 3D Reconstruction, Multimodal Perception \& Foundation Models\\
+AI Foundations & Multi-Agent Systems, Sequence Modeling \& Transformers, \\& Representation Learning, Generative Models\\
+
+\end{tabular}
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%	PROJECTS
+
+\begin{rSection}{PROJECTS}
+
+\begin{rSubsection}{Critical Path Method Project Scheduler}
+{July 2026 (In Progress)}{Object-Oriented Programming Training, Tsinghua University}{}
+
+\item Developed a C++ project scheduling system implementing the Critical Path Method (CPM) algorithm
+\item Designed with MVC architecture and a template-based file I/O plugin system supporting extensible formats
+\item Supports four standard dependency types (FS, SS, FF, SF) with configurable lag, resource management, \\and DAG cycle detection via DFS-based topological check
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Catgirl Resource Machine --- A Programming Puzzle Game}
+{November 2025}{Fundamentals of Programming, Tsinghua University}{}
+
+\item Built a puzzle game in C++/Qt~6 inspired by \textit{Human Resource Machine}, featuring an assembly-like \\instruction set (inbox, outbox, add, sub, copyto, copyfrom, jump, jumpifzero)
+\item Implemented a 4-level campaign with progressive difficulty, single-step debugging, and \\real-time visual feedback via Qt signal/slot mechanism
+
+\end{rSubsection}
+
+%-------------------------------------------------
+
+\begin{rSubsection}{Home Service Robot Vision Pipeline (YOLO11-seg + SAM3)}
+{June 2026}{Introduction to Artificial Intelligence, Tsinghua University}{}
+
+\item Built a full-stack deep learning pipeline for household object detection and instance segmentation, \\targeting home service robotics applications
+\item Integrated SAM3 for zero-shot automatic annotation with seed-and-propagate workflow across video \\frames, and YOLO11-seg for real-time inference
+\item Implemented automatic dataset export (YOLO format), data augmentation (Albumentations), \\and a React + Vite web frontend with WebSocket-based real-time training feedback
+
+
+\end{rSubsection}
+
+\end{rSection} 
+
+
+ 
+ %-----------------------------------------------------------------------------
+ % POSITION OF RESPONSIBILITY
+ %-----------------------------------------------------------------------------
+  
+\begin{rSection}{POSITION OF RESPONSIBILITY} \itemsep -3pt
+
+{\textbf{Hardware Department Officer}, Student Association of Science and Technology, \\Department of Automation, Tsinghua University} \hfill May 2026 -- Present \\
+{\textbf{Technical Commissioner}, ``General Artificial Intelligence'' Class, \\Department of Automation, Tsinghua University} \hfill May 2026 -- Present \\
+{\textbf{Vision Team Member, Tinker Team}, Tsinghua Future Robot Club (FuRoC)} \hfill \texttt{tinkerfuroc.github.io} \\
+
+\end{rSection}
+  
+
+%--------------------------------------------------------------------------------------
+% Extra-Curricular
+%--------------------------------------------------------------------------------------
+
+\begin{rSection}{Extra-Curricular} \itemsep -2pt
+
+\begin{itemize}
+
+\item \textbf{Tsinghua 2nd Embodied Intelligence Challenge}, Team Member \hfill December 2025
+\item \textbf{Tsinghua 5th Robot Dog Development Competition}, Team Leader \hfill June 2026
+\item \textbf{2026 China Robot Competition \& RoboCup China Open (RoboCup@Home)}, Team Member \hfill 2026
+\item \textbf{RoboCup 2026 Incheon, RoboCup@Home League}, Team Member \hfill July 2026
+
+\end{itemize}
+
+\end{rSection} 
+
+
+%---------------------------------------------------------------------------------
+%  Honors and Awards
+%--------------------------------------------------------------------------------
+
+
+\begin{rSection}{Honors and Awards} \itemsep -2pt
+
+\textbf{NOIP (National Olympiad in Informatics in Provinces)} --- Provincial First Prize \hfill 2023 \\
+\textbf{Tsinghua 2nd Embodied Intelligence Challenge} --- Special Award \hfill December 2025 \\
+\textbf{Tsinghua 5th Robot Dog Development Competition} --- 4th Place \& Best Technological Innovation Award \hfill June 2026 \\
+\textbf{2026 China Robot Competition \& RoboCup China Open (RoboCup@Home)} --- National First Prize \hfill 2026 \\
+\textbf{RoboCup 2026 Incheon, RoboCup@Home League} --- 11th Place Worldwide \hfill July 2026 \\
+
+\end{rSection}
+
+
+%---------------------------------------------------------------------------------
+%  DECLARATION
+%--------------------------------------------------------------------------------
+
+\begin{rSection}{ Declaration  } \itemsep -3pt        
+
+\item I hereby declare that all the details furnished above are true to the best of my knowledge and belief.   
+  
+\end{rSection}
+\end{document}
